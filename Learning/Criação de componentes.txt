@@ -1,0 +1,18 @@
+import React, { Component } from  'react';
+import {View, Text} from 'react-native';
+
+class App extends Component{
+  render(){
+    return(
+      <View>
+        <Text>Olá Mundo!!!</Text>
+        <Text style={{ color: 'red', fontSize: 25}}>Testando estilização</Text>
+      </View>
+    )
+  }
+}
+
+export default App;
+
+
+// Não pode ter px na definição do tamanho das coisas 

@@ -1,0 +1,38 @@
+# Diretórios Node.js
+/node_modules
+/npm-debug.log
+/yarn-error.log
+
+# Diretórios específicos para o iOS
+/ios/build/
+/ios/Pods/
+/ios/DerivedData/
+
+# Diretórios específicos para o Android
+/android/app/build/
+/android/.gradle
+/android/.idea
+/android/local.properties
+/android/app/proguard-rules.pro
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.lock
+
+# Arquivos do Editor (IDE)
+.vscode/
+.idea/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Outros arquivos gerados automaticamente
+.expo/
+.expo-shared/
+.env
+
+# Arquivos de caches
+/coverage/
+/__tests__/__snapshots__
