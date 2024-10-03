@@ -1,0 +1,35 @@
+import React, { Component } from  'react';
+import {View, Text, StyleSheet} from 'react-native';
+
+class App extends Component{
+  render(){
+    return(
+      <View View={styles.area}>
+          <Text style={[styles.textoPar, styles.alinhaTexto]}>Eu sou texto 1</Text>
+          <Text style={styles.textoImpar}>Eu sou texto 2</Text>
+          <Text style={styles.textoPar}>Eu sou texto 3</Text>
+          <Text style={styles.textoImpar}>Eu sou texto 4</Text>
+      </View>
+    )
+  }
+}
+
+const styles = StyleSheet.create({
+  area:{
+    marginTop: 100
+  },
+  textoPar:{
+    fontSize: 25,
+    color: 'red'
+  },
+  textoImpar:{
+    fontSize: 25,
+    color: 'blue'
+  },
+  alinhaTexto:{
+    textAlign: 'center'
+  }
+});
+
+
+export default App;

@@ -1,0 +1,22 @@
+import React, { Component } from  'react';
+import {View, Text} from 'react-native';
+
+class App extends Component{
+  render(){
+    return(
+      <View style={{flex: 1, backgroundColor: 'gray'}}>
+          <View style={{flex: 1, backgroundColor: 'red'}}></View>
+          <View style={{flex: 1, backgroundColor: 'green'}}></View>
+          <View style={{flex: 2, backgroundColor: 'yellow'}}></View>
+          <Text>Teste</Text>
+      </View>
+    )
+  }
+}
+// O flex 1: Faz as views se ajustarem
+// O flex 2 corresponde a duas vezes o tamanho da view com flex 1
+export default App;
+
+
+// --------------------------------------------------------------------
+

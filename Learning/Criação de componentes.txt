@@ -1,18 +1,43 @@
 import React, { Component } from  'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
 
 class App extends Component{
   render(){
+    let nome = 'Felipe';
+    let url = 'https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
+
     return(
       <View>
         <Text>Olá Mundo!!!</Text>
         <Text style={{ color: 'red', fontSize: 25}}>Testando estilização</Text>
+
+        <Text>Chamada de JS: {nome}</Text>
+
+        <Text>Chamada de componente</Text>
+        <Jobs largura={500} altura={2} nome={'Google'}/>
       </View>
     )
   }
 }
 
+class Jobs extends Component{
+  
+  render(){
+    let url = 'https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
+
+      return(
+        <View>
+          <Image
+          source={{uri: url}}  // Sempre deve ser https quando vier da internet
+          style={{width: this.props.largura, height: this.props.altura}} // Chamada de props
+          
+          />
+          <Text>Foto do {this.props.nome}</Text>
+        </View>
+      );
+  }
+}
+
 export default App;
-
-
 // Não pode ter px na definição do tamanho das coisas 
+// props são estáticas
